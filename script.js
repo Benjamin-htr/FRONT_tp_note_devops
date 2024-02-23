@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   async function fetchCountryData() {
     try {
-      const response = await fetch('http://gprrr.co:3014/countries');
+      const response = await fetch('http://gprrrr.co:3014/countries');
       const data = await response.json();
       populateTable(data);
     } catch (error) {
