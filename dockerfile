@@ -2,7 +2,7 @@
 FROM httpd:latest
 
 
-COPY . ./usr/local/apache2/htdocs/frontend
+COPY . /usr/local/apache2/htdocs/groupe_6_frontend
 
 # RUN echo "ServerName localhost" >> /usr/local/apache2/conf/httpd.conf
 
