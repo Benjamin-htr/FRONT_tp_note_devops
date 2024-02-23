@@ -23,3 +23,5 @@ jobs:
         run: |
           DATE=$(date +"%d%m%Y")
           docker buildx build --push --tag ghcr.io/benjamin-htr/tp_final_front:$DATE --tag ghcr.io/benjamin-htr/tp_final_front:latest .
+      - name: Post request to portainer
+        run: curl -X POST https://gprrrr.co:9443/api/webhooks/b12270f6-770a-4aa3-bf16-7a0bac572b51
